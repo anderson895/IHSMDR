@@ -20,6 +20,7 @@
                 data: formData,
                 dataType: 'json',
                 success: function(data) {
+                    console.log(data)
                     if (data.success) {
                         //console.log('Login successful'); // Log success message
                          window.location.href = data.user; // Redirect on success

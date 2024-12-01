@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 16, 2024 at 01:12 AM
+-- Generation Time: Dec 01, 2024 at 05:10 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -78,12 +78,12 @@ CREATE TABLE `detail_patient_maternal` (
 INSERT INTO `detail_patient_maternal` (`id`, `patient_id`, `maternal_id`) VALUES
 (3, 7, 7),
 (4, 8, 10),
-(5, 8, 33),
 (6, 7, 10),
-(42, 5, 5),
 (43, 6, 1),
 (44, 6, 2),
-(45, 6, 4);
+(45, 6, 4),
+(46, 7, 46),
+(47, 9, 35);
 
 -- --------------------------------------------------------
 
@@ -262,17 +262,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `firstName`, `lastName`, `email`, `password`, `reset_token`, `reset_expires_at`, `user_type`, `created_at`) VALUES
-(5, 'Cullen', 'Lens', 'SjFFK1lFanNXdzJobUpnOEtteU0rTFFzWEV0RUhUK2x0YkhKU0xXdlg2M3ZSRlV1Y085T29WaUp3ODhXamJHRw==', 'SjFFK1lFanNXdzJobUpnOEtteU0rSmNHdkVXaWZTL2x3WlRTVUluUDVxND0=', '', '0000-00-00 00:00:00', 'Pharmacist', '2024-11-07 01:59:44'),
-(7, 'John', 'Due', '\r\nSjFFK1lFanNXdzJobUpnOEtteU0rRzBCcC9sSWUvN1RWbTdmWDI5MEdXQT0=', '\r\nSjFFK1lFanNXdzJobUpnOEtteU0rTlo4NUhoZlgxRUp5Y1dKNU5DQVpwUT0=', '', '2024-10-11 01:02:32', 'Admin', '2024-10-10 15:02:52'),
-(10, 'Allen', 'Umapas', 'SjFFK1lFanNXdzJobUpnOEtteU0rQTM5WmFTRVlLY0FqZjdaYzNGT1JoazlFYS9KWkFZa1paeDh4cDNvSGtpeA==', 'SjFFK1lFanNXdzJobUpnOEtteU0rQytrSmkwWjB0dGVhemRQeHRnajNjYz0=', '', '0000-00-00 00:00:00', 'Pharmacist', '2024-11-07 06:56:36'),
-(11, 'Luiz', 'Lacasa', 'SjFFK1lFanNXdzJobUpnOEtteU0rTGU3Z3pMb0VFV1BvS25zWUJrclZvTHJiTmRuUEhPMitOaGd6aFBScVVabQ==', 'SjFFK1lFanNXdzJobUpnOEtteU0rTHNHTWM0S1NaLy8zU1QwVUJlSXprdz0=', '', '0000-00-00 00:00:00', 'Nurse', '2024-11-06 17:18:05'),
-(12, 'Ben ', 'Doe', 'SjFFK1lFanNXdzJobUpnOEtteU0rRzBCcC9sSWUvN1RWbTdmWDI5MEdXQT0=', 'SjFFK1lFanNXdzJobUpnOEtteU0rTlo4NUhoZlgxRUp5Y1dKNU5DQVpwUT0=', '', '0000-00-00 00:00:00', 'Admin', '2024-11-07 01:29:00'),
-(13, 'Jim', 'Jim', 'SjFFK1lFanNXdzJobUpnOEtteU0rRUNFMjdEK2pkWURib2NsL3NtanJseThwdWt4Zk44dkpiY2F5cFNTVVAxcw==', 'SjFFK1lFanNXdzJobUpnOEtteU0rRzE3K2dubFBFb0FlbWV5Z0FNc0Nsbz0=', '', '0000-00-00 00:00:00', 'Pharmacist', '2024-11-14 23:33:04'),
-(14, 'eric', 'von', 'SjFFK1lFanNXdzJobUpnOEtteU0rS2xlQmtJWXZuZTlOYVE0VjVZcnlkRzBldHB2VHJLTFY4bTNLUUJNNitXdw==', 'SjFFK1lFanNXdzJobUpnOEtteU0rREhldG9iY3FpblY5dTNrUjlVdWdnND0=', '', '0000-00-00 00:00:00', 'Pharmacist', '2024-11-07 02:03:16'),
-(15, 'Jimmy', 'Samillano', 'SjFFK1lFanNXdzJobUpnOEtteU0rQkZ2K3lzenJOYVcrR3FGZlZndmFDeFhJekxLSFFYZjAvb1pUc3BsU1djTw==', 'SjFFK1lFanNXdzJobUpnOEtteU0rSlhqU1Vxb2N4eWt5WnlvWmk1Um52WT0=', '', '0000-00-00 00:00:00', 'Pharmacist', '2024-11-07 02:05:17'),
-(16, 'andy', 'andy', 'SjFFK1lFanNXdzJobUpnOEtteU0rUE9MWmRKQ0t5QXRoVFdKbEtCRnpCZz0=', 'SjFFK1lFanNXdzJobUpnOEtteU0rQS9panFmT21KK2dvc2ZxaGRHZWZhcz0=', '', '0000-00-00 00:00:00', 'BHW', '2024-11-07 06:39:04'),
-(17, 'Allen', 'Umapas', 'SjFFK1lFanNXdzJobUpnOEtteU0rQ2pwaWRxd2hMY3FhNm5ZMGY1cGM5VT0=', 'SjFFK1lFanNXdzJobUpnOEtteU0rSm13UG0zdFdWRWN2Y25QOW05ck1vUT0=', '', '0000-00-00 00:00:00', 'Pharmacist', '2024-11-14 23:20:49'),
-(18, 'newnwew', 'acc', 'SjFFK1lFanNXdzJobUpnOEtteU0rTktmRVl2OVFJbGRRbGZjelRjNFJXMHc2Y1QxYnZyZUEyVnRiZUMwQ1hFYQ==', 'SjFFK1lFanNXdzJobUpnOEtteU0rTnRvaTB1cDN1QmN4MU03NWZHTU9MST0=', '', '0000-00-00 00:00:00', 'Pharmacist', '2024-11-15 01:16:32');
+(5, 'Cullen', 'Lens', 'b61af7c37386084b01bf36677b8629f562c48425a7f37ba8a1b24e91599826f1', 'b61af7c37386084b01bf36677b8629f562c48425a7f37ba8a1b24e91599826f1', '', '0000-00-00 00:00:00', 'Pharmacist', '2024-12-01 15:59:04'),
+(7, 'John', 'Due', '2f595bb8d39d2dd633f606e9e92026fb75b3c541538d17317841e8ea170403ad', '2f595bb8d39d2dd633f606e9e92026fb75b3c541538d17317841e8ea170403ad', '', '2024-10-11 01:02:32', 'Admin', '2024-12-01 15:59:22'),
+(11, 'Luiz', 'Lacasa', '3b7efad9d552a45e245f133813a943e17993b52d73edfd9d63baa5938d35f11f', '3b7efad9d552a45e245f133813a943e17993b52d73edfd9d63baa5938d35f11f', '', '0000-00-00 00:00:00', 'Nurse', '2024-12-01 15:59:38'),
+(16, 'andy', 'andy', '3dafe6580f79fbc42bba4e8c90c50993eaef062c4b9e25b3fea9fedb07e17bf1', '3dafe6580f79fbc42bba4e8c90c50993eaef062c4b9e25b3fea9fedb07e17bf1', '', '0000-00-00 00:00:00', 'BHW', '2024-12-01 15:59:59');
 
 --
 -- Indexes for dumped tables
@@ -288,7 +281,9 @@ ALTER TABLE `barangay`
 -- Indexes for table `detail_patient_maternal`
 --
 ALTER TABLE `detail_patient_maternal`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `maternal_id` (`maternal_id`),
+  ADD KEY `patient_id` (`patient_id`);
 
 --
 -- Indexes for table `master_category`
@@ -334,7 +329,7 @@ ALTER TABLE `barangay`
 -- AUTO_INCREMENT for table `detail_patient_maternal`
 --
 ALTER TABLE `detail_patient_maternal`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT for table `master_category`
@@ -365,6 +360,17 @@ ALTER TABLE `patients`
 --
 ALTER TABLE `users`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `detail_patient_maternal`
+--
+ALTER TABLE `detail_patient_maternal`
+  ADD CONSTRAINT `detail_patient_maternal_ibfk_1` FOREIGN KEY (`maternal_id`) REFERENCES `master_maternal` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `detail_patient_maternal_ibfk_2` FOREIGN KEY (`patient_id`) REFERENCES `patients` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

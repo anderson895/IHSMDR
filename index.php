@@ -1,4 +1,4 @@
-<?php include'includes/header.php';?>
+<?php include 'includes/header.php';?>
 <body class="bg" >
    <div class="container">
       <div class="row justify-content-center align-items-center min-vh-100">
@@ -12,18 +12,7 @@
                   </div>
                   <form id="formLogin" class="mb-3">
                   <h5 class="alert alert-light">Personal Details</h5>
-                     <div class="form-floating mb-3">
-                        <select class="form-select" id="userType" name="userType" aria-label="User Type">
-                           <option value="" disabled selected>User Type</option>
-                           <option value="admin">Admin</option>
-                           <option value="Pharmacist">Pharmacist</option>
-                           <option value="PharmacistAssistant">Pharmacist Assistant</option>
-                           <option value="Nurse">Nurse</option>
-                           <option value="Midwife">Midwife</option>
-                           <option value="BHW">BHW(Barangay Health Workers)</option>
-                        </select>
-                        <label for="userType">Login As</label>
-                     </div>
+                     
                      <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="loginEmail" name="loginEmail" placeholder="Enter your email" required>
                         <label for="loginEmail">Email</label>
