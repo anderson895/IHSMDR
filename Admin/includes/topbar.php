@@ -110,7 +110,8 @@
                     </div>
                 </li>
                 <li>
-                <h1 id="name-of-the-user"><?php  echo $_SESSION['username']="UserName(Current LogIn)"; ?></h1>
+
+                <h1 id="name-of-the-user">Welcome, <?php  echo $_SESSION['name'] ?></h1>
                 </li>
                 <li class="nav-item dropdown has-arrow main-drop">
                     <a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
@@ -123,7 +124,7 @@
                                 <span class="user-img"><img src="assets/img/profiles/default-avatar.jpg" alt="">
                                 <span class="status online"></span></span>
                                 <div class="profilesets">
-                                    <h6><?php echo $_SESSION['username']; ?></h6>
+                                    <h6><?php echo $_SESSION['name']; ?></h6>
                                     <h5>Admin</h5>
                                 </div>
                             </div>
